@@ -69,10 +69,16 @@ const config = {
           onUntruncatedBlogPosts: 'warn',
         },
         theme: {
-          customCss: './src/css/custom.css',
+          // customCss: './src/css/custom.css',
+          customCss:require.resolve('./docs-lab/shared/css/custom.scss'),
         },
       }),
     ],
+  ],
+
+  plugins: [
+    'docusaurus-plugin-sass',
+    './plugins/webpack-alias.plugin.js', 
   ],
 
   themeConfig:

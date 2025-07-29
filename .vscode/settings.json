@@ -1,0 +1,12 @@
+{
+    "favorites.resources": [
+        {
+            "filePath": "docusaurus.config.js",
+            "group": "Default"
+        },
+        {
+            "filePath": "sidebars.js",
+            "group": "Default"
+        }
+    ]
+}
