@@ -7,6 +7,14 @@
         {
             "filePath": "sidebars.js",
             "group": "Default"
+        },
+        {
+            "filePath": "src/components/HomepageFeatures/index.js",
+            "group": "Default"
+        },
+        {
+            "filePath": "src/pages/index.js",
+            "group": "Default"
         }
     ]
 }
