@@ -10,9 +10,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Contrabass',
+  tagline: '콘트라베이스 상품을 소개합니다.',
+  favicon: 'img/tw_favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -87,17 +87,55 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Home Logo',
+          src: 'img/tw_logo_l2.png',
+          srcDark: 'img/tw_logo_d2.png',
         },
         items: [
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'cbSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Contrabass',
+            docId: 'contrabass/introduction.mdx',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'lsSidebar',
+            position: 'left',
+            label: 'License',
+            docId: 'license/lincense.mdx',
+          },
+          {
+            type: 'dropdown',
+            label: 'What\'s New',
+            position: 'left',
+            items: [
+              {
+                type: 'doc',
+                docId: 'release-notes/new-features',
+                // to: 'release-notes/new-features',
+                label: 'New Features',
+                // sidebarId: 'releaseSidebar',
+                // activeBaseRegex: '^/new-features/?$'
+              },
+              {
+                type: 'doc',
+                docId: 'release-notes/release-notes',
+                // to: 'release-notes/release-notes',
+                label: 'Release Notes',
+                // sidebarId: 'releaseSidebar',
+                // activeBaseRegex: '^/release-notes/?$'
+              },
+            ]
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {

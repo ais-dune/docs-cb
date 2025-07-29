@@ -56,3 +56,5 @@ export default function HomepageFeatures() {
     </section>
   );
 }
+
+// 현재 css는 공유 리소스에서 받아오도록 설정
