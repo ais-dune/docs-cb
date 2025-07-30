@@ -13,7 +13,6 @@ const config = {
   title: 'Contrabass',
   tagline: '콘트라베이스 상품을 소개합니다.',
   favicon: 'img/tw_favicon.ico',
-  deploymentBranch: 'gh-pages',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
