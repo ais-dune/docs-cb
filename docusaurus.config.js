@@ -20,15 +20,15 @@ const config = {
   },
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://ais-dune.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docs-cb/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'ais-dune', // Usually your GitHub org/user name.
+  projectName: 'docs-cb', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,9 +37,29 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: 'ko',
+    locales: ['ko'],
+    // locales: ['ko', 'en'],
+    localeConfigs: {
+      ko: {
+        label: '한국어',
+        direction: 'ltr',
+        htmlLang: 'ko-KR',
+      },
+      // en: {
+      //   label: 'English',
+      //   direction: 'ltr',
+      //   htmlLang: 'en-US',
+      // },
+    },
   },
+
+  trailingSlash: false,
+
+  plugins: [
+    'docusaurus-plugin-sass',
+    './plugins/webpack-alias.plugin.js', 
+  ],
 
   presets: [
     [
@@ -74,11 +94,6 @@ const config = {
         },
       }),
     ],
-  ],
-
-  plugins: [
-    'docusaurus-plugin-sass',
-    './plugins/webpack-alias.plugin.js', 
   ],
 
   themeConfig:
