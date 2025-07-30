@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Contrabass',
   tagline: '콘트라베이스 상품을 소개합니다.',
-  favicon: 'img/tw_favicon.ico',
+  favicon: 'img/common/tw_favicon.ico',
   deploymentBranch: 'gh-pages',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -101,13 +101,13 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/common/docusaurus-social-card.jpg',
       navbar: {
         title: '',
         logo: {
           alt: 'Home Logo',
-          src: 'img/tw_logo_l2.png',
-          srcDark: 'img/tw_logo_d2.png',
+          src: 'img/common/tw_logo_l2.png',
+          srcDark: 'img/common/tw_logo_d2.png',
         },
         items: [
           // {
